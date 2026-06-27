@@ -1,0 +1,217 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1736777886168-f7be887a4aea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 46, 46);
+    text-decoration: underline;
+}
+
+.list{
+    font-size: 40px;
+    line-height: 1.3;
+    color: rgb(1, 70, 70);
+}
+
+.content {
+    font-size: 27px;
+    height: max-content;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(17, 17, 85), black ,teal);
+    margin-bottom: 100px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.box {
+    height: 270px;
+    width: 410px;
+    background-color: rgba(250,250,250,0.1);
+    backdrop-filter: blur(10px);
+    outline: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.box:hover {
+    cursor: pointer;
+    outline-color: black;
+}
+
+.ass {
+    height: 160px;
+    width: 300px;
+    margin: auto;
+    margin-top: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s ease;
+}
+
+.ass:hover {
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+
+.ass-1 {
+    background-image: url(./asseets/periodic-table-img.png);
+}
+
+.ass-2 {
+    background-image: url(./asseets/google-form-img.png);
+}
+
+.ass-3 {
+    background-image: url(./asseets/card-img.png);
+    background-position: center;
+}
+
+.ass-4 {
+    background-image: url(./asseets/color-palettes-img.png);
+}
+
+.ass-5 {
+    background-image: url(./asseets/apple-clone-img.png);
+}
+
+.ass-6 {
+    background-image: url(./asseets/calculator-img.png);
+}
+
+.ass-7 {
+    background-image: url(./asseets/digital-clock-img.png);
+}
+
+.ass-8 {
+    background-image: url(./asseets/color-game-img.png);
+}
+
+.ass-9 {
+    background-image: url(./asseets/todo_list.png);
+}
+
+.ass-10 {
+    background-image: url(./asseets/login-form-img.png);
+}
+
+#title {
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+button {
+    margin-left: 140px;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:768px) {
+    .list {
+        font-size: 30px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .head {
+        font-size: 20px;
+    }
+
+    .list {
+        font-size: 20px;
+    }
+
+    .content {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .head {
+        font-size: 18px;
+    }
+
+    .list {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #users-div{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .user-card{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #upd{
+            display: none;
+        }
+
+        .input{
+            text-align: center;
+        }
+
+        .input #user{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="input">
+        <input type="text" id="user" name="username" placeholder="enter your name">
+        <button id="add">add</button>
+        <button id="upd">update</button>
+    </div>
+
+    <div id="users-div">
+
+    </div>
+    
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
