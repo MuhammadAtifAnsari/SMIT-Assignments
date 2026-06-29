@@ -206,6 +206,12 @@ button {
     }
 }
 
+@media screen and (max-width:375px) {
+    button {
+        margin-left: 120px;
+    }
+}
+
 @media screen and (max-width:320px) {
     .head {
         font-size: 18px;
@@ -213,5 +219,9 @@ button {
 
     .list {
         font-size: 15px;
+    }
+
+    button {
+        margin-left: 90px;
     }
 }
