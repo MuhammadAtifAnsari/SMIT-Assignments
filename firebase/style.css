@@ -1,0 +1,220 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100wh;
+    background-image: url(./assets/background.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* ul li {
+    display: inline;
+    padding: 25px;
+    color: rgb(255,255,255);
+} */
+
+a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-color: white;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    border: none;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.login-form {
+    height: 400px;
+    width: 320px;
+    background-color: rgba(255,255,255,0.1);
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.login-form:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#user-pic {
+    height: 5em;
+    width: 5em;
+    background-image: url(./assets/userpic.avif);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 7.2em;
+}
+
+.inputs {
+    position: absolute;
+    margin-top: 8em;
+}
+
+#email-inp, #password-inp {
+    margin-left: 2em;
+    width: 18em;
+    padding: 0.9em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+#email-inp:hover, #password-inp:hover {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+}
+
+#forgot {
+    margin-left: 2.2em;
+    color: white;
+}
+
+#forgot:hover, #checkbox-inp:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#checkbox-inp {
+    margin-left: 2em;
+}
+
+input[type="checkbox"]{
+  accent-color: purple;
+}
+
+#login-btn {
+    background: linear-gradient(90deg,rgb(68, 0, 68),rgba(255, 0, 255, 0.678));
+    color: #ffffff;
+    position: absolute;
+    margin-left: 1.9em;
+    width: 20em;
+    padding: 0.9em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: bold;
+}
+
+#login-btn:hover {
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+
+.signup {
+    margin-left: 3.2em;
+}
+
+#signup {
+    color: green;
+    font-weight: bold;
+}
+
+#member {
+    color: purple;
+}
+
+#email-icon, #password-icon {
+    position: absolute;
+    margin-left: -2em;
+    margin-top: 0.8em;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width:768px) {
+
+    .login-form {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .login-form {
+        margin-top: 3vh;
+    }
+
+    ul li {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    h1{
+        display: none;
+    }
+
+    nav {
+        margin-top: 15px;
+        justify-content: center;
+    }
+    button {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .login-form {
+        width: 300px;
+    }
+
+    #email-inp,  #password-inp {
+        width: 16em;
+    }
+
+    #login-btn {
+        width: 18em;
+    }
+
+    #forgot {
+        margin-left: 5.5em;
+        font-size: 0.9em;
+    }
+    
+    label {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+#signout-btn, #delete-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    /* transition: 0.9s ease; */
+}
+
+#signout-btn {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#signout-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+#delete-btn:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.container {
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.post-div {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    /* text-decoration: overline; */
+    text-decoration: underline;
+    background: linear-gradient(to right, #e20505, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media screen and (max-width:425px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #signout-btn, #delete-btn {
+        width: 100px;
+    }
+
+    nav {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    #signout-btn, #delete-btn {
+        width: 85px;
+        height: 40px;
+    }
+}

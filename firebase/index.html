@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>CodingLab</h1>
+            <!-- <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Product</li></a>
+                <a href="#"><li>Services</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul> -->
+            <a href="./pages/login/login.html" target="_blank"><button>Login</button></a>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <form class="login-form" id="register-form">
+            <br>
+            <!--img-->
+            <div id="user-pic"></div>
+            <!--inputs--> 
+            <div class="inputs">
+                <div>
+                    <!-- <div id="email-icon">"><i class="fa-solid fa-envelope"></div> -->
+                        <input type="email" id="email-inp" placeholder="Enter your email">
+                        <span id="email-icon"><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                <br>
+                <div>
+                    <input type="password" id="password-inp" placeholder="Enter your password">
+                    <span id="password-icon"><i class="fa-solid fa-passport"></i></span>
+                </div>
+                <br>
+                <div>
+                    <label>
+                    <input type="checkbox" id="checkbox-inp"> <span>Remember</span>
+                    <span id="forgot">Forgot password?</span>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Register" id="login-btn">
+                    <!-- <button id="login-btn">Login Now</button> -->
+                </div>
+                <br>
+                <!-- <div class="signup">
+                    <span id="member">Not a member?</span>
+                    <span id="signup">Signup Now</span>
+                </div> -->
+
+            </div>
+        </form>
+
+    </main>
+    
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
