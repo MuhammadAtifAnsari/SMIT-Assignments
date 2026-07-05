@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Lists</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--FONT AWESOME LINK-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">             <!--GOOGLE FONTS LINK -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">                                  AOS ANIMATION LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  <!--ANIMATE.CSS LINK-->
+</head>
+<body>
+  
+  <div class="main">
+    <br>
+    <!--USER NAME WITH THE HELP OF PROMPT-->
+    <div id="username" class="animate__animated animate__zoomIn animate__slow	2s"></div>
+    <br>
+    <div id="todo-list" class="animate__animated animate__fadeInUpBig animate__slow	2s">
+      <br>
+        <h1>Just Do It!</h1>
+        <!-- <div class="search-box"> -->
+          <!-- <div id="search-icon"><i class="fa-notdog-duo fa-solid fa-magnifying-glass"></i></div> -->
+          <input id="create-task" type="text" placeholder="Crate a task and press Add">
+        <!-- </div> -->
+        
+        <!-- <div class="buttons"> -->
+          <!-- ADD BUTTON -->
+        <button id="add-btn" onClick="addTask()">
+          <span id="add">Add</span>
+          <span id="add-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <!-- UPDATE BUTTON -->
+        <button id="update-btn" onClick="updateTask()">
+          <span id="update">Update</span>
+          <span id="update-icon"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+        </button>   
+        <!-- ALL CLEAR BUTTON -->
+        <button id="allclear-btn" onClick="allClearTask()">
+          <span id="allclear">All Clear</span>
+          <span id="allclear-icon"><i class="fa-regular fa-rectangle-xmark"></i></span>
+        </button>
+        <!-- </div>   -->
+        <br> 
+        <br>  
+        <br>  
+    </div>
+    <br>
+     
+    <!--TASK SHOW HERE-->
+    <div id="show-task">
+      
+    </div>
+    <br>
+
+  </div>
+
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>

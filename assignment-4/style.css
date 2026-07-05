@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(60, 64, 199); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    height: 200px;
+    width: 290px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2.5%;
+}
+
+.child1, .child2{
+    display: flex;
+    gap: 50px;
+}
+
+.child1{
+    margin-bottom: 50px;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6{
+    height: 150px;
+    width: 268px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 2.5%;
+}
+
+.content1, .content2, .content3, .content4, .content5, .content6{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+span{
+    margin-top: 10px;
+}
+
+.color1{
+    background-image: url(./assets/Aussie\ Palette\(1\).png);
+    background-size: cover;
+}
+
+.color2{
+    background-image: url(./assets/British\ Palette.png);
+    background-size: cover;
+}
+
+.color3{
+    background-image: url(./assets/Cnadian\ Palette.png);
+    background-size: cover;
+}
+
+.color4{
+    background-image: url(./assets/Chinese\ Paltte.png);
+    background-size: cover;
+}
+
+.color5{
+    background-image: url(./assets/Dutch\ Palette.png);
+    background-size: cover;
+}
+
+.color6{
+    background-image: url(./assets/French\ Palette.png);
+    background-size: cover;
+}
+
+.left1{
+    margin-left: 10px;
+}
+
+.right1{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .child1{
+        flex-wrap: wrap;
+    }
+
+    .child2{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+     
+    .parent{
+        margin-left: 65px;
+    }
+}
+
+@media screen and (max-width:375px) {
+     .parent{
+        margin-left: 40px;
+     }
+}
+
+@media screen and (max-width:320px) {
+    .parent {
+        margin-right: 38px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .parent {
+        margin-right: 30px;
+    }
+    
+} 
+
+@media screen and (max-width:330px) {
+    .parent {
+        margin-right: 40px;
+    }
+    
+} 
+

@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    margin-left: 30px;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+.right{
+    margin-right: 30px;
+    font-size: 1.5em;
+    color: black;
+}
+
+select{
+    background-color: black;
+    color: white;
+    height: 48px;
+    width: 300px;
+    font-size: 1.2em;
+}
+
+option{
+    background-color: white;
+    color: black;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+    height: 130.7px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+.parent1, .parent2, .parent3, .parent4, .parent5{
+    display: flex;
+    color: white;
+}
+
+.box1{
+    background-color: #eccc68;
+}
+
+.box2{
+    background-color: #ff7f50;
+}
+
+.box3{
+    background-color: #ff6b81;
+}
+
+.box4{
+    background-color: #a4b0be;
+}
+
+.box5{
+    background-color: #57606f;
+}
+
+.box6{
+    background-color: #ffa502;
+}
+
+.box7{
+    background-color: #ff6348;
+}
+
+.box8{
+    background-color: #ff4757;
+}
+
+.box9{
+    background-color: #747d8c;
+}
+
+.box10{
+    background-color: #2f3542;
+}
+
+.box11{
+    background-color: #7bed9f;
+}
+
+.box12{
+    background-color: #70a1ff;
+}
+
+.box13{
+    background-color: #5352ed;
+}
+
+.box14{
+    background-color: #ffffff;
+}
+
+.box15{
+    background-color: #dfe4ea;
+}
+
+.box16{
+    background-color: #2ed573;
+}
+
+.box17{
+    background-color: #1e90ff;
+}
+
+.box18{
+    background-color: #3742fa;
+}
+
+.box19{
+    background-color: #f1f2f6;
+}
+
+.box20{
+    background-color: #ced6e0;
+}
+
+.parent1 span{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.parent2 span{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.parent3 span{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.parent4 span{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (max-width:768px) {
+    span{
+        display: none;
+    }
+
+    #left{
+        display: block;
+    }
+    
+    #right{
+        display: block;
+    }
+
+    .left{
+        display: flex;
+    }
+    .right{
+        display: flex;
+    }
+
+    body{
+        background-color: rgb(60, 64, 199);
+    }  
+
+    header{
+        background-color: white;
+        padding: 5px;
+    }
+
+    br{
+        display: none;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+        height: 150px !important;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+        height: 120px !important;
+    }
+    
+    body header{
+        width: 108.5%;
+    }
+
+    body .parent1, .parent2, .parent3, .parent4{
+        width: 110.9%;
+    }
+
+    #left{
+        font-size: 20px;
+        display: none !important;
+    }
+    
+    #right{
+        font-size: 20px;
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #left{
+        display: none;
+    }
+    
+    #right{
+        display: none;
+    }
+
+    body .parent1, .parent2, .parent3, .parent4{
+        width: 112%;
+    }
+
+    body header{
+        width: 109.2%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body .parent1, .parent2, .parent3, .parent4{
+        width: 118%;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+        height: 150px !important;
+    }
+
+    body header{
+        width: 115%;
+    }    
+}
+
+/* @media screen and (max-width:1024px) {
+    span{
+        display: none;
+    }
+
+    #left{
+        display: block;
+    }
+
+    #right{
+        display: block;
+    }
+
+    .left{
+        display: flex;
+    }
+    
+    .right{
+        display: flex;
+
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+        height: 234px !important;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+       height: 263px !important;
+    }
+}
+
+@media screen and (max-width:2560px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+       height: 490px;
+       width: 512px;
+    } 
+
+} */

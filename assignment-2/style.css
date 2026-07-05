@@ -1,0 +1,158 @@
+
+body{
+    margin: 0;
+    padding: 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+.container{
+   background-color: rgb(8, 8, 80);
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.parent{
+    height: 400px;
+    width: 1040px;
+}
+
+.box1{
+    background-color: white;
+    border-radius:25px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+.content-box{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    
+}
+
+.input-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    padding-bottom: 50px;  
+       
+}
+
+.input-box > input{
+    width: 70%; 
+    margin-right: 40px;
+    padding: 3%;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.input-box  button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 40px;
+    background-color: rgb(42, 42, 253);
+    color: white;
+}
+
+span{
+    display: flex;
+    justify-content:baseline ;
+}
+
+.box2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+    color: white; 
+}
+
+img{
+    margin-top: 35px;
+}
+
+.title{
+    font-size: 2em;
+}
+
+
+@media screen and (max-width:768px) { 
+    .box1{
+        flex-direction: column;
+        width: 100%;
+        height: 90%;  
+    }
+
+    .parent{
+        height: 90%;
+    }
+
+    .input-box{
+        width: 80%;
+        margin-left: 6%;
+        height: 50%;
+    }
+    .content-box{
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .input-box > input{
+        width:88%;
+        height: 8px;
+    }
+
+    .input-box > button{
+        position: relative;
+        margin-right: 35px;
+        margin-bottom: 45px;
+    }
+
+    .box2{
+        padding: 0%;
+        margin-bottom: 5%;
+}
+}
+
+@media screen and (max-width:425px) {
+    .input-box{
+        margin-left: 15%;
+    }
+    
+    input{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .content-box{
+        font-size: 18px;
+    }
+    
+    .box-2 .left,.right{
+        font-size: 14px;
+    }
+    
+    .input-box{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .input-box{
+        margin-left: 65px;
+    }
+}

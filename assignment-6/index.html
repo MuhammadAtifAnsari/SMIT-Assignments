@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--animate.css link-->
+</head>
+<body>
+    <div class="main">
+        <!-- <div id="greet"></div> -->
+        <div class="calculator animate__animated animate__zoomIn">
+            <div id="calculator-screen">
+                <div id="screen-1"></div>
+                <div id="screen-2"></div>
+            </div>
+            <div class="container">
+                <div class="row row">
+                    <div class="col">
+                        <button class="green" onClick="inputNumbers('C')">C</button>
+                        <button class="green" onClick="inputNumbers('/')">/</button>
+                        <button class="green" onClick="inputNumbers('*')">*</button>
+                        <button class="green orange" onClick="inputNumbers('DEL')">DEL</button>
+                    </div>
+                </div>
+                <div class="row row">
+                    <div class="col">
+                        <button onClick="inputNumbers('7')">7</button>
+                        <button onClick="inputNumbers('8')">8</button>
+                        <button onClick="inputNumbers('9')">9</button>
+                        <button class="green" onClick="inputNumbers('-')">-</button>
+                    </div>
+                </div>
+                <div class="row row">
+                    <div class="col">
+                        <button onClick="inputNumbers('4')">4</button>
+                        <button onClick="inputNumbers('5')">5</button>
+                        <button onClick="inputNumbers('6')">6</button>
+                        <button class="green" onClick="inputNumbers('+')">+</button>
+                    </div>
+                </div>
+                <div class="row row">
+                    <div class="col">
+                        <button onClick="inputNumbers('1')">1</button>
+                        <button onClick="inputNumbers('2')">2</button>
+                        <button onClick="inputNumbers('3')">3</button>
+                        <button class="green" onClick="inputNumbers('%')">%</button>
+                    </div>
+                </div>
+                <div class="row row">
+                    <div class="col">
+                        <button onClick="inputNumbers('00')">00</button>
+                        <button onClick="inputNumbers('0')">0</button>
+                        <button onClick="inputNumbers('.')">.</button>
+                        <button class="green white" onClick="calculateValue()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

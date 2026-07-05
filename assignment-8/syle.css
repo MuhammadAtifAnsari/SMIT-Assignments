@@ -1,0 +1,142 @@
+body{
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #EE5A24, #FFC312, #EA2027, #0652DD, #C4E538, #12CBC4, 
+    #FDA7DF, #ED4C67);
+    border-radius: 15px;
+}
+
+.score-box{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+
+.score-box:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px black;
+}
+
+#color-match-box{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    transition: 0.5s ease;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#color-match-box:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    font-weight: bold;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px white;
+    /* box-shadow: 5px 5px 15px 0px red,-5px -5px 15px 0px blue; */
+    text-decoration: underline;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.span{
+    margin-top: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .score-box{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    #color-match-box{
+        height: 70px;
+        width: 70px;
+    }
+    
+    .box{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .box{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .score-box{
+        font-weight: bold;
+        font-size: 15px;
+        padding: 7px 15px;
+    }
+
+    #color-match-box{
+        height: 50px;
+        width: 50px;
+    }
+
+    .box{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:150px) {
+   .score-box{
+        font-weight: bold;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    #color-match-box{
+        height: 30px;
+        width: 30px;
+    }
+}

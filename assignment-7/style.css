@@ -1,0 +1,77 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/951/340/small_2x/sea-ocean-beach-sunset-sunrise-landscape-outdoor-water-wave-with-white-foam-beautiful-sunset-colorful-sky-with-clouds-natural-island-panoramic-background-idyllic-amazing-tropical-island-shore-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock{
+    padding: 30px;
+    box-shadow: 5px 5px 20px 3px black;
+    /* , -5px -5px 20px 0px black */
+    font-weight: 700;
+    /* font-size: 50px; */
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+span{
+    font-size: 50px;
+}
+
+#amPm{
+    position: relative;
+    font-size: 30px;
+}
+
+#clock #date, #days, #year, #month{
+    font-size: 25px;
+    display: inline;
+}
+
+a{
+    position: absolute;
+    top: 70%;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: lightblue;
+}
+
+button:hover{
+    box-shadow: 5px 5px 13px black;
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:320px) {
+    .contaier{
+        height: 100vh;
+    }
+    span{
+        font-size: 30px;
+    }
+    
+    #clock #date, #days, #year, #month{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(90deg,#062720,#257c59);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*USER NAME WITH THE HELP OF PROMPT*/
+#username{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*DIV OF INPUT & ADD BUTTON*/
+#todo-list{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px black;
+}
+
+h1{
+  color: white;
+  font-size: 60px;
+}
+
+/*CREATE INPUT DESIGN*/
+#create-task{
+  width: 40%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+
+/* SEARCH ICON */
+/* #search-icon{
+  position: absolute;
+  color: black;
+  top: 31.5%;
+  left: 34.66%;
+} */
+
+/*CREATE BUTTON DESIGN*/
+#add-btn, #allclear-btn, #update-btn{
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#update-btn{
+  display: none;
+}
+
+#show-task{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/*JAVASCRIPT ELEMENT*/
+.list-item-task{
+  position: relative;
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 10px;
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+  /* overflow-x: hidden; */
+  overflow-y: hidden;
+  border-radius: 30px;
+  background: linear-gradient(90deg,black,rgb(102, 197, 102),rgb(14, 100, 71),rgb(0, 160, 160));
+  border: none;
+}
+
+.btn-span{
+  position: absolute;
+  right: 2%;
+}
+
+.edit{
+  right: 12%;
+}
+
+.ok{
+  right: 22%;
+}
+
+button{
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.done{
+  background: linear-gradient(90deg, gray,black);
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+.delete-btn{
+  color: white;
+  background-color: red;
+}
+
+/*LAPTOP SCREEN(768px);*/
+@media screen and (max-width:768px) {
+      
+ .edit-span, .ok-span, .delete-span{
+    display: none;
+  }
+  
+  .delete-btn, .edit-btn, .ok-btn{
+    width: 40px;
+    font-size: 10px;
+  }
+  
+  #show-task{
+    width: 80%;
+  }
+
+  .edit{
+  right: 9%;
+}
+
+.ok{
+  right: 16%;
+}
+
+#todo-list{
+  width: 60%;
+}
+
+#create-task{
+  padding: 20px;
+  width: 50%;
+}
+
+#search-icon{
+  margin-top: -2%;
+  margin-left: -3%;
+}
+
+#add-btn, #allclear-btn, #update-btn{
+  /* height: 35px; */
+  width: 45px;
+}
+
+#allclear, #update, #add{
+  display: none;
+}
+
+#username{
+  font-size: 20px;
+}
+}
+
+/*LAPTOP SCREEN(1024px);*/
+@media screen and (max-width:1024px) {
+  #search-icon{
+    top: 32%;
+    left: 32%;
+  }  
+
+   .edit-span, .ok-span, .delete-span{
+    display: none;
+  }
+
+    .delete-btn, .edit-btn, .ok-btn{
+    width: 40px;
+    font-size: 10px;
+  }
+}
+
+/*MOBILE SCREEN(425px);*/
+@media screen and (max-width:425px) {
+  #username{
+    font-size: 15px;
+  }
+
+  #todo-list{
+    width: 80%;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  #search-icon{
+    top: 30%;
+    left: 19%;
+  }
+
+  #show-task{
+    width: 100%;
+  }
+
+  .delete-btn, .edit-btn, .ok-btn{
+    width: 25px;
+    font-size: 8px;
+  }
+}
+
+/*MOBILE SCREEN(375px);*/
+@media screen and (max-width:375px) {
+  #add-btn, #allclear-btn, #update-btn{
+  height: 25px;
+  width: 30px;
+}
+
+#create-task{
+  padding: 10px;
+  height: 25px;
+}
+
+#search-icon{
+  left: 21%;
+  top: 29.5%;
+  font-size: 10px;
+}
+}
+
+@media screen and (max-width:320px) {
+  #search-icon{
+    top: 29.5%;
+    left: 19.5%;
+  }  
+
+   .edit{
+  right: 10.4%;
+}
+
+.ok{
+  right: 19%;
+}
+}
