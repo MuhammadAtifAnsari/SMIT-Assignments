@@ -1,3 +1,9 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 body {
     background-image: url(https://images.unsplash.com/photo-1736777886168-f7be887a4aea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
     background-repeat: no-repeat;
@@ -5,19 +11,44 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+}
+
+/* Interactive background */
+.interactive-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(56, 189, 248, 0.18),
+            transparent 25%),
+        radial-gradient(circle at 20% 20%,
+            rgba(59, 130, 246, 0.12),
+            transparent 30%),
+        radial-gradient(circle at 80% 80%,
+            rgba(14, 165, 233, 0.10),
+            transparent 30%),
+        #070b14;
 }
 
 .head {
     text-align: center;
     font-size: 30px;
-    color: rgb(0, 46, 46);
-    text-decoration: underline;
+    color: #f8fafc;
+    /* text-decoration: underline; */
 }
 
-.list{
+.list {
     font-size: 40px;
     line-height: 1.3;
-    color: rgb(1, 70, 70);
+    color: #cbd5e1;
+    margin: 8px 20px;
+}
+
+li::marker {
+    color: #38bdf8;
 }
 
 .content {
@@ -29,7 +60,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, rgb(17, 17, 85), black ,teal);
+    background: linear-gradient(45deg, rgb(17, 17, 85), black, teal);
     margin-bottom: 100px;
 }
 
@@ -44,15 +75,21 @@ body {
 .box {
     height: 270px;
     width: 410px;
-    background-color: rgba(250,250,250,0.1);
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.15);
     backdrop-filter: blur(10px);
-    outline: 2px solid transparent;
-    transition: 0.5s;
+
+    transition: 0.3s ease;
 }
 
 .box:hover {
     cursor: pointer;
-    outline-color: black;
+    transform: translateY(-6px);
+    border-color: rgba(56, 189, 248, 0.55);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(56, 189, 248, 0.12);
 }
 
 .ass {
@@ -112,75 +149,90 @@ body {
     background-image: url(./asseets/login-form-img.png);
 }
 
+.ass-11 {
+    background-image: url(./asseets/react-logo.png);
+}
+
 #title {
     position: absolute;
     margin-left: 55px;
     margin-top: 5px;
     font-size: 25px;
     font-weight: bold;
+    color: #cbd5e1;
 }
 
-/* From Uiverse.io by adamgiebl */ 
+/* From Uiverse.io by adamgiebl */
 .cssbuttons-io {
-  position: relative;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  border-radius: 0.8em;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
-  color: ghostwhite;
-  overflow: hidden;
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: ghostwhite;
+    overflow: hidden;
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .cssbuttons-io svg {
-  width: 1.2em;
-  height: 1.2em;
-  margin-right: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
 }
 
 .cssbuttons-io span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.8em 1.2em 0.8em 1.05em;
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
 }
 
 .cssbuttons-io::before,
 .cssbuttons-io::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 .cssbuttons-io::before {
-  content: "";
-  background: #000;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
 .cssbuttons-io:hover::before {
-  transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
 }
 
 .cssbuttons-io:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.cssbuttons-io:hover {
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
 }
 
 button {
     margin-left: 140px;
     margin-top: 12px;
 }
+
 
 @media screen and (max-width:768px) {
     .list {
